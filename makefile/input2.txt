@@ -1,0 +1,8 @@
+rien.cpp
+3
+modifie.o 2
+modifie.cpp header.hpp
+autre.o 3
+autre.cpp autre.hpp header.hpp
+binaire 2
+autre.o modifie.o
