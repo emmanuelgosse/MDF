@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class CouloirTresor {
     public static String NAME = "couloirtresor";
 
-    public static String REP = "C:\\tfs\\code\\mdf\\";
+    public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
     public static int id = 4;
 

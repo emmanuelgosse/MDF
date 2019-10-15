@@ -14,7 +14,7 @@ public class Arrosage_pelouse {
 
   public static String NAME = "arrosage_pelouse";
 
-  public static String REP = "C:\\tfs\\code\\mdf\\";
+  public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
   public static int id = 0;
 

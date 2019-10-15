@@ -10,7 +10,7 @@ public class RezoInformatique2 {
 
     public static String NAME = "rezo_informatique2";
 
-    public static String REP = "C:\\tfs\\code\\mdf\\";
+    public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
     public static int id = 0;
 

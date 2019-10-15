@@ -10,7 +10,7 @@ public class AfficheVoiture {
 
     public static String NAME = "affiche_voiture";
 
-    public static String REP = "C:\\tfs\\code\\mdf\\";
+    public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
     public static int id = 0;
 

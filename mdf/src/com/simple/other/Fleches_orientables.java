@@ -13,7 +13,7 @@ public class Fleches_orientables {
 
     public static String NAME = "fleches_orientables";
 
-    public static String REP = "C:\\tfs\\code\\mdf\\";
+    public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
     public static int id = 2;
 

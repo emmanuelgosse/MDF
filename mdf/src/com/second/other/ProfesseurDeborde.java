@@ -10,7 +10,7 @@ public class ProfesseurDeborde {
     public static final String STR = "-";
     public static String NAME = "professeurdeborde";
 
-    public static String REP = "C:\\tfs\\code\\mdf\\";
+    public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
     public static int id = 0;
 

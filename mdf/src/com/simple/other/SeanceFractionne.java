@@ -10,7 +10,7 @@ public class SeanceFractionne {
 
     public static String NAME = "seance_fractionnes";
 
-    public static String REP = "C:\\tfs\\code\\mdf\\";
+    public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
     public static int id = 0;
 

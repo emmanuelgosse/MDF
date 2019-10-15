@@ -12,7 +12,7 @@ public class SalleDeSport {
 
   public static String NAME = "SalleDeSport";
 
-  public static String REP = "C:\\tfs\\code\\mdf\\";
+  public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
   public static int id = 0;
 

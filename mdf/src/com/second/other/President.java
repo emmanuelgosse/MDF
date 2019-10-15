@@ -10,7 +10,7 @@ public class President {
 
     public static String NAME = "president";
 
-    public static String REP = "C:\\tfs\\code\\mdf\\";
+    public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
     public static int id = 0;
 

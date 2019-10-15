@@ -10,7 +10,7 @@ public class Makefile {
 
     public static String NAME = "makefile";
 
-    public static String REP = "C:\\tfs\\code\\mdf\\";
+    public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
     public static int id = 3;
 

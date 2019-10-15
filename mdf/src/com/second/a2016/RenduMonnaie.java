@@ -10,7 +10,7 @@ public class RenduMonnaie {
 
     public static String NAME = "rendu_monnaie";
 
-    public static String REP = "C:\\tfs\\code\\mdf\\";
+    public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
 
     public static int id = 0;
 
