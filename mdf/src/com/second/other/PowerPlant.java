@@ -94,10 +94,12 @@ public class PowerPlant {
       work(tab, values, i);
     }
 
-    int result = Arrays.stream(values[x - 1]).min().getAsInt() - 1;
-    if (result == Integer.MAX_VALUE - 1) {
+    int result = Arrays.stream(values[x - 1]).min().getAsInt();
+    if (result == Integer.MAX_VALUE) {
       result = -1;
     }
+
+  //  print(values);
 
     System.out.println("" + result);
 
@@ -111,7 +113,7 @@ public class PowerPlant {
       String[] first = tab[0];
       int t = 0;
       for (String s : first) {
-        values[row][t++] = s.equals(".") ? 1 : Integer.MAX_VALUE;
+        values[row][t++] = s.equals(".") ? 0 : Integer.MAX_VALUE;
       }
     } else {
       String[] previous = tab[row - 1];
@@ -120,21 +122,51 @@ public class PowerPlant {
       int[] cur_values = values[row];
 
       for (int i = 0; i < current.length; i++) {
-        // good
+
         if (current[i].equals(".")) {
 
+          // Direct parent
           if (previous[i].equals(".") && prev_values[i] != Integer.MAX_VALUE) {
             if (cur_values[i] > prev_values[i] + 1) {
               cur_values[i] = prev_values[i] + 1;
             }
-          } else {
-            if (i > 0 && current[i - 1].equals(".") && cur_values[i - 1] < Integer.MAX_VALUE) {
+          }
+
+          // Left
+          if (i > 0 && current[i - 1].equals(".") && cur_values[i - 1] < Integer.MAX_VALUE) {
+            if (cur_values[i] > cur_values[i - 1] + 1) {
               cur_values[i] = cur_values[i - 1] + 1;
             }
           }
 
         } else {
           cur_values[i] = Integer.MAX_VALUE;
+        }
+      }
+
+      // right
+      for (int i = current.length - 1; i >= 0; i--) {
+        if (current[i].equals(".")) {
+          if (i < current.length - 1
+              && current[i + 1].equals(".")
+              && cur_values[i + 1] < Integer.MAX_VALUE) {
+            if (cur_values[i] > cur_values[i + 1] + 1) {
+              cur_values[i] = cur_values[i + 1] + 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  static void print(int[][] tab) {
+    for (int i = 0; i < tab.length; i++) {
+      System.out.println("");
+      for (int j = 0; j < tab[0].length; j++) {
+        if (tab[i][j] == Integer.MAX_VALUE) {
+          System.out.print(String.format("% 4d", 0) + " ");
+        } else {
+          System.out.print(String.format("% 4d", tab[i][j]) + " ");
         }
       }
     }

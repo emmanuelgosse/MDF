@@ -1,16 +1,20 @@
-package com;
+package com.mdf19;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.ParseException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+import java.util.StringTokenizer;
 import java.util.stream.Collectors;
 
-public class Template {
+public class SecondExercice {
 
-    public static String NAME = "demineur";
+    public static String NAME = "second";
 
-  public static String REP = "C:\\tfs\\code\\mdf\\resources\\";
+  public static String REP = "C:\\tfs\\code\\mdf\\live\\";
 
     public static int id = 0;
 
